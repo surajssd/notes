@@ -66,5 +66,6 @@
 
 ### Ref:
 
-- Video: https://www.youtube.com/watch?v=BaHp8YXIsD0
-- Held at: Container Camp, a community conference about software containers. April 17, 2015, San Francisco.
+- **Video**: https://www.youtube.com/watch?v=BaHp8YXIsD0
+- **Slides**: https://speakerdeck.com/thockin/containercamp-kubernetes-and-container-management
+- **Held at**: Container Camp, a community conference about software containers. April 17, 2015, San Francisco.
