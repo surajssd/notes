@@ -4,7 +4,7 @@ Date: Dec 3, 2016
 
 ## Requirements:
 
-- Linux kernel code: git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+- Linux kernel code: `git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git`
 - Install `git-email` package
 - Keep your gitconfig file to have send-mail
 

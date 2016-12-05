@@ -69,6 +69,15 @@ Move line or selection up/down.
 
 - In code you can write TODOs and FIXME and then IDE can identify them and you can write code later on in there.
 
+## Other receipes
+
+#### Compare branches
+
+- Press `Ctrl + Shift + A` to open the action window, search for `branches`, open branches window. Also can be done [as](https://www.jetbrains.com/help/pycharm/2016.1/accessing-git-branches-popup-menu.html).
+- Once branch pop-window is open, select with what branch you wanna compare current checked out branch.
+- It will open up a window with all changes, select a file you wanna compare.
+- Above steps are also given [here](https://www.jetbrains.com/help/pycharm/2016.1/merging-deleting-and-comparing-branches.html).
+
 
 ## Ref:
 
