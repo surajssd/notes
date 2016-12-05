@@ -74,8 +74,8 @@ Move line or selection up/down.
 #### Compare branches
 
 - Press `Ctrl + Shift + A` to open the action window, search for `branches`, open branches window. Also can be done [as](https://www.jetbrains.com/help/pycharm/2016.1/accessing-git-branches-popup-menu.html).
-- Once branch pop-window is open, select with what branch you wanna compare current checked out branch.
-- It will open up a window with all changes, select a file you wanna compare.
+- Once branch pop-window is open, select with what branch you wanna compare current checked out branch and select `compare`.
+- It will open up a window with all changes, in top tabs select `diff`, then select a file you wanna compare.
 - Above steps are also given [here](https://www.jetbrains.com/help/pycharm/2016.1/merging-deleting-and-comparing-branches.html).
 
 
