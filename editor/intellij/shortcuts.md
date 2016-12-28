@@ -64,6 +64,10 @@ Comment/Uncomment out with block comment, a line or selected block.
 
 Move line or selection up/down.
 
+- `Alt + cursor right/left`
+
+Switch tabs of open files.
+
 
 ## Notes and Tips
 
