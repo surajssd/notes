@@ -50,7 +50,38 @@ t.Parallel()
 Skip test using `t.Skip("some message as to why skip this test")`.
 Error reporting using, `t.Errorf`, `t.Fatalf`, `t.Logf`.
 
+
+## Quality tests in go
+
+### Shared setup and teardown:
+
+Return a teardown func so setup and teardown code is kept together
+
+```go
+func setup(t *testing.T) (*db, func()) {
+    db, err := dial(testDatabase)
+    if err != nil {
+        t.Errorf("dial: %s", err)
+        return nil, func(){}
+    }
+    return db, func() {
+        if err := db.Close(); err != nil {
+            t.Errorf("db close: %s", err)
+        }
+    }
+}
+```
+
+### Using different package name for the test code
+
+
+- This gives you a external perspective of the package
+- You don't fiddle with the internal functions
+- *"If you don't trust yourself to not use private methods in unit tests, then I cannot help you" -- Dave Cheney*
+
 ## Test coverage
+
+*"Shoot for 90% code coverage, 100% of the happy path" --William Kennedy*
 
 repost test coverage stats
 
@@ -63,6 +94,13 @@ the `go` tool can generate coverage profiles that may be interpreted by the cove
 ```bash
 $ go test -coverprofile=cover.out
 $ go tool cover -func=cover.out
+```
+
+To see how much of your code was touched when you ran your test
+
+```bash
+$ go test -covermode=count -coverprofile=count.out
+$ go tool cover -html=count.out
 ```
 
 Coverage visualization
