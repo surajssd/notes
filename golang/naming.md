@@ -57,4 +57,5 @@
 
 - What's in a name? [video](https://youtu.be/sFUSP8Au_PE).
 - [Variables by ArdanLabs](https://github.com/ardanlabs/gotraining/blob/master/topics/go/language/variables/README.md#links)
+- [CodeReviewComments](https://github.com/golang/go/wiki/CodeReviewComments)
 
